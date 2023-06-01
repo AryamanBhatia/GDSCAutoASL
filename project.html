@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Our Project</h1>
+    
+    <div class="taskbar">
+      <a href="javascript:void(0);" onclick="navigateToPage('about.html')">About</a>
+      <a href="javascript:void(0);" onclick="navigateToPage('project.html')">Our Project</a>
+      <a href="javascript:void(0);" onclick="navigateToPage('contact.html')">Contact Us</a>
+    </div>
+    
+    <div class="content">
+      <div class="webcam-box">
+        <video id="webcam" autoplay></video>
+      </div>
+      
+      <textarea></textarea>
+    </div>
+  </div>
+  
+  <script>
+    const socket = new WebSocket('wss://gdsc-ai-asl.cc17.repl.co/');
+  
+    // Handle incoming messages from the server
+    socket.onmessage = function(event) {
+      const output = event.data;
+      document.querySelector('textarea').value = output;
+    };
+  </script>
+</body>
+</html>

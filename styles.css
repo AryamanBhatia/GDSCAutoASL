@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(to bottom, #749BE8, #0227DE);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0; /* Initially set to transparent */
+    transition: opacity 0.3s ease; /* Apply a transition effect */
+  }
+  
+  .container {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .taskbar {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .taskbar a {
+    margin-right: 10px;
+  }
+  
+  .page-title {
+    font-size: 300%;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-bottom: 50px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .member {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .webcam-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+  }
+  
